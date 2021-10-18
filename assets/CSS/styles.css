@@ -73,7 +73,7 @@
     margin-top: 80px;
 }
 
-.img{
+.imagens .img{
     height: 160px;
     width: 160px;
     border: 6px solid rgb(6, 100, 6);
@@ -86,39 +86,86 @@
 
 .conteudo2{
     height: 150vh;
+
     display: grid;
     grid-template-areas: 
     "c3 c5"
-    "c3 c5"
+    "c3 c5 "
     "c4 c5"
     ;
 }
 
-.c3{
-    grid-area: c3;
-   background-color: green;
-}
 .c4{
     grid-area: c4;
     background-image:url('../images/f2.jpg');
     background-size: cover;
     background-position: center center;
+  
 }
 .c5{
     grid-area: c5;
     background-image:url('../images/f1.jpg');
     background-size: cover;
     background-position: center center;
+  
+}
+.c3{
+    grid-area: c3;
+    width: 0vw;
+    height: 0vh;
 }
 
+.conteudo_c3, .conteudo_c4, .conteudo_c9{
+    height: 0vh;
+    width: 0vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 100px;
+}
 
+.linha{
+    width: 150px;
+    height: 20px;
+    background-color: rgb(13, 83, 13);
+    color:rgb(13, 83, 13);
 
+}
+
+.conteudo3 h1, .conteudo2 h1, .conteudo4 h1, .conteudo5 h1{
+    font-size: 40px;
+    width: 500px;
+}
+
+.conteudo2 h2{
+    font-size: 20px;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.txt{
+    font-size: 20px;
+    width: 500px;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+    text-align: left;
+    line-height: 30px;
+}
+.saber_mais{
+    font-size: 20px;
+    margin-top: 50px;
+    padding:10px;
+    border: 2px solid black;
+    width: 180px;
+    text-align: center;
+}
 
 
 .conteudo3{
     height: 150vh;
     display: grid;
     grid-template-areas: 
+    "c6 c7"
     "c6 c7"
     "c6 c8"
     ;
@@ -130,10 +177,15 @@
     background-size: cover;
     background-position: center center;
 }
+
+
 .c7{
     grid-area: c7;
-    background-color: black;
+    height: 0vh;
+    width: 0vw;
 }
+
+
 .c8{
     grid-area: c8;
     background-image:url('../images/f4.jpg');
@@ -151,7 +203,7 @@
 .c9{
     grid-area: c9;
     background-image:url('../images/bg2.jpg');
-   background-size: 200%;
+    background-size: 200%;
     background-position: 0% 90%;
 }
 .c10{
