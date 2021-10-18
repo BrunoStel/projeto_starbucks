@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.head{
+    height: 100px;
+}
+
+.linha_verde{
+    height: 10px;
+    background-color: rgb(19, 112, 19);
+}
+.menu{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 100px;
+    margin-top: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.menu_esquerda{
+    display: flex;
+    margin-right: 100px;
+}
+
+.menu_mobile{
+    width: 30px;
+    height: 30px;
+    margin-top: 30px;
+}
+
+.conteudo1{
+    height: 100vh;
+    background-image:url('../images/bg.jpg');
+    background-size:  cover;
+}
+
+.container1{
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    margin-left: 120px;
+}
+.texto h1{
+    margin-top: 50px;
+    font-size: 100px;
+}
+.texto h2{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+}
+
+.img{
+    height: 160px;
+    width: 160px;
+    border: 6px solid rgb(6, 100, 6);
+    border-radius: 200px;
+    margin-right: 35px;
+}
+
+
+
+.conteudo2{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "c3 c5"
+    "c4 c5"
+    ;
+}
+
+.c3{
+    grid-area: c3;
+   background-color: green;
+}
+.c4{
+    grid-area: c4;
+    background-image:url('../images/f2.jpg');
+    background-size: cover;
+}
+.c5{
+    grid-area: c5;
+    background-image:url('../images/f1.jpg');
+    background-size: cover;
+}
+
+.conteudo3{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "c6 c7"
+    "c6 c8"
+    ;
+}
+
+.c6{
+    grid-area: c6;
+    background-image:url('../images/f3.jpg');
+    background-size: cover;
+}
+.c7{
+    grid-area: c7;
+    background-color: black;
+}
+.c8{
+    grid-area: c8;
+    background-image:url('../images/f4.jpg');
+    background-size: cover;
+}
+
+.conteudo4{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "c9 c10"
+    ;
+}
+.c9{
+    grid-area: c9;
+    background-image:url('../images/bg2.jpg');
+    background-size: cover;
+}
+.c10{
+    grid-area: c10;
+    background-image:url('../images/f5.jpg');
+    background-size: cover;
+}
+
+.conteudo5{
+    height: 100vh;
+    background-image:url('../images/bg3.jpg');
+   
+}
+
+.conteudo6{
+    height: 80vh;
+    background-image:url('../images/bg4.jpg');
+    background-size: cover;
+    
+   
+}
+
+.rodape{
+    height: 33vh;
+    background-color: rgb(54, 53, 53);
+}
