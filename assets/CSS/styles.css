@@ -9,7 +9,7 @@
 
 .linha_verde{
     height: 10px;
-    background-color: rgb(19, 112, 19);
+    background-color: rgb(13, 83, 13);
 }
 .menu{
     height: 90px;
@@ -32,13 +32,24 @@
 .menu_mobile{
     width: 30px;
     height: 30px;
-    margin-top: 30px;
+    margin-top: 43px;
 }
+
+.search{
+    margin-right: 50px;
+    height: 35px;
+    width: 250px;
+    margin-top: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
 
 .conteudo1{
     height: 100vh;
     background-image:url('../images/bg.jpg');
     background-size:  cover;
+    background-position: center center;
 }
 
 .container1{
@@ -72,10 +83,12 @@
 
 
 
+
 .conteudo2{
-    height: 100vh;
+    height: 150vh;
     display: grid;
     grid-template-areas: 
+    "c3 c5"
     "c3 c5"
     "c4 c5"
     ;
@@ -89,15 +102,21 @@
     grid-area: c4;
     background-image:url('../images/f2.jpg');
     background-size: cover;
+    background-position: center center;
 }
 .c5{
     grid-area: c5;
     background-image:url('../images/f1.jpg');
     background-size: cover;
+    background-position: center center;
 }
 
+
+
+
+
 .conteudo3{
-    height: 100vh;
+    height: 150vh;
     display: grid;
     grid-template-areas: 
     "c6 c7"
@@ -109,6 +128,7 @@
     grid-area: c6;
     background-image:url('../images/f3.jpg');
     background-size: cover;
+    background-position: center center;
 }
 .c7{
     grid-area: c7;
@@ -118,10 +138,11 @@
     grid-area: c8;
     background-image:url('../images/f4.jpg');
     background-size: cover;
+    background-position: center center;
 }
 
 .conteudo4{
-    height: 100vh;
+    height: 120vh;
     display: grid;
     grid-template-areas: 
     "c9 c10"
@@ -130,25 +151,35 @@
 .c9{
     grid-area: c9;
     background-image:url('../images/bg2.jpg');
-    background-size: cover;
+   background-size: 200%;
+    background-position: 0% 90%;
 }
 .c10{
     grid-area: c10;
     background-image:url('../images/f5.jpg');
     background-size: cover;
+ 
 }
 
 .conteudo5{
-    height: 100vh;
+    height: 120vh;
+    background-color: rgb(232,233,238);
     background-image:url('../images/bg3.jpg');
-   
+    background-repeat: no-repeat;
+    background-position: 250% center;
 }
 
-.conteudo6{
+.conteudo6 {
     height: 80vh;
+    display:flex;
+    justify-content: center;
+    background-color: rgb(232,233,238);
+}
+.c12{
+    width: 80vw;
     background-image:url('../images/bg4.jpg');
     background-size: cover;
-    
+    background-position: center center;
    
 }
 
