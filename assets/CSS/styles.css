@@ -1,7 +1,13 @@
+:root{
+    --color:#006341;
+  }
+
 *{
     margin: 0px;
     box-sizing: border-box;
+    
 }
+
 
 .head{
     height: 100px;
@@ -9,7 +15,7 @@
 
 .linha_verde{
     height: 10px;
-    background-color: rgb(13, 83, 13);
+    background-color: var(--color);
 }
 .menu{
     height: 90px;
@@ -58,6 +64,7 @@
     width: 50%;
     margin-left: 120px;
 }
+
 .texto h1{
     margin-top: 50px;
     font-size: 100px;
@@ -76,59 +83,59 @@
 .imagens .img{
     height: 160px;
     width: 160px;
-    border: 6px solid rgb(6, 100, 6);
+    border: 6px solid var(--color);
     border-radius: 200px;
     margin-right: 35px;
 }
 
 
 
-
 .conteudo2{
+    overflow: hidden;
     height: 150vh;
-
     display: grid;
     grid-template-areas: 
     "c3 c5"
-    "c3 c5 "
     "c4 c5"
     ;
+
+}
+
+.c3{
+    width: 50vw;
+    height: 100vh;
+    grid-area: c3;
+    display: flex;
+    flex-flow: column;
+    padding-top: 100px;
+    padding-left: 100px;
+  
 }
 
 .c4{
+    height: 50vh;
     grid-area: c4;
     background-image:url('../images/f2.jpg');
     background-size: cover;
     background-position: center center;
-  
 }
+
 .c5{
+    width: 50vw;
     grid-area: c5;
     background-image:url('../images/f1.jpg');
     background-size: cover;
     background-position: center center;
-  
-}
-.c3{
-    grid-area: c3;
-    width: 0vw;
-    height: 0vh;
 }
 
-.conteudo_c3, .conteudo_c4, .conteudo_c9, .conteudo_c11{
-    height: 0vh;
-    width: 0vw;
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    margin-left: 100px;
-}
+
+
 
 .linha{
     width: 150px;
     height: 20px;
-    background-color: rgb(13, 83, 13);
-    color:rgb(13, 83, 13);
+    background-color: var(--color);
+    color:var(--color);
 
 }
 
@@ -162,31 +169,36 @@
 
 
 .conteudo3{
+    overflow: hidden;
     height: 150vh;
     display: grid;
     grid-template-areas: 
-    "c6 c7"
     "c6 c7"
     "c6 c8"
     ;
 }
 
 .c6{
+    width: 50vw;
     grid-area: c6;
     background-image:url('../images/f3.jpg');
     background-size: cover;
     background-position: center center;
 }
 
-
 .c7{
+    width: 50vw;
+    height: 90vh;
     grid-area: c7;
-    height: 0vh;
-    width: 0vw;
+    display: flex;
+    flex-flow: column;
+    padding-top: 100px;
+    padding-left: 100px;
+  
 }
 
-
 .c8{
+    height: 60vh;
     grid-area: c8;
     background-image:url('../images/f4.jpg');
     background-size: cover;
@@ -194,6 +206,7 @@
 }
 
 .conteudo4{
+    overflow: hidden;
     height: 120vh;
     display: grid;
     grid-template-areas: 
@@ -201,12 +214,24 @@
     ;
 }
 .c9{
+    width: 50vw;
     grid-area: c9;
     background-image:url('../images/bg2.jpg');
     background-size: 200%;
     background-position: 0% 90%;
 }
+
+.conteudo_c9{
+    width: 50vw;
+    display: flex;
+    flex-flow: column;
+    margin-top: 200px;
+    margin-left: 100px;
+  
+}
+
 .c10{
+    width: 50vw;
     grid-area: c10;
     background-image:url('../images/f5.jpg');
     background-size: cover;
@@ -230,9 +255,14 @@
         text-align: left;
         line-height: 25px;
     }
-
-
-
+    .conteudo_c11{
+        width: 50vw;
+        display: flex;
+        flex-flow: column;
+        margin-top: 200px;
+        margin-left: 100px;
+      
+    }
 
 .conteudo6 {
     height: 80vh;
@@ -251,4 +281,20 @@
 .rodape{
     height: 33vh;
     background-color: rgb(54, 53, 53);
+}
+
+@media (max-width:1100px) {
+    body{
+        width: 100vw;
+    }
+    .conteudo2{
+        
+        grid-template-areas: 
+        "c3"
+        "c4"
+        "c5"    
+        ;
+    }
+   
+
 }
