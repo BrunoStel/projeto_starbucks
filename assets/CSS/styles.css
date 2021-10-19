@@ -233,6 +233,11 @@
 
 .saber_mais{
     font-size: 20px;
+    margin-top: 50px;
+    padding:10px;
+    border: 2px solid black;
+    width: 180px;
+    text-align: center;
 }
 
 
@@ -307,6 +312,22 @@
 
     .conteudo6{
         height: 50vh;
+    }
+    .conteudo3 h1, .conteudo2 h1, .conteudo4 h1, .conteudo5 h1{
+        font-size: 25px; 
+        line-height: 25px;
+        margin-top:10px
+    }
+    .linha{
+        height: 15px;
+        width: 100px;
+    }
+    .saber_mais{
+        font-size: 15px;
+        margin-top: 30px;
+        padding:10px;
+        border: 2px solid black;
+        width: 150px;
     }
     
 }
