@@ -52,29 +52,28 @@
 
 /*-----------------------------------Main------------------------*/
 .conteudo1{
-    height: 100vh;
     background-image:url('../images/bg.jpg');
     background-size:  cover;
-    background-position: center center;
+    background-position:  center;
+    padding-top:90px;
+    padding-bottom:90px;
 }
 
 .container1{
-    display: flex;
-    flex-direction:column;
-    width: 50%;
-    margin-left: 120px;
+    max-width:1140px;
+    margin:auto;
 }
 
 .imagens{
-    margin-top: 80px;
+    margin-top:60px;
 }
 
 .container1 .img{
-    height: 160px;
-    width: 160px;
+    width:148px;
+    height:148px;
     border: 6px solid var(--color);
-    border-radius: 200px;
-    margin-right: 35px;
+    border-radius: 50%;
+    margin-right:30px;
 }
 
 
@@ -204,12 +203,11 @@
 
 /*--------------------Formatação dos textos-----------------------*/
 .container1 h1{
-    margin-top: 50px;
-    font-size: 100px;
-}
-.container1 h2{
-    margin-top: 30px;
-    font-size: 20px;
+    font-size: 90px;
+    font-weight: bold;
+    line-height: 100px;
+    margin: 0px;
+    margin-bottom: 30px;
 }
 
 .linha{
@@ -221,15 +219,12 @@
 }
 
 .conteudo3 h1, .conteudo2 h1, .conteudo4 h1, .conteudo5 h1{
-    font-size: 30px;
-    width: 500px
-    
+    font-size: 30px; 
 }
 
 .conteudo2 h2{
     font-size: 15px;
     margin-top: 20px;
-    width: 500px
 }
 
 .txt{
@@ -237,23 +232,15 @@
     margin-top: 20px;
     text-align: justify;
     line-height: 25px;
-    width: 500px;
-}
-.saber_mais{
-    font-size: 20px;
-    margin-top: 50px;
-    padding:10px;
-    border: 2px solid black;
-    width: 180px;
-    text-align: center;
 }
 
-.c11 h1{
-    width: 400px;
+.saber_mais{
+    font-size: 20px;
 }
+
+
 .c11 .txt{
     font-size: 20px;
-    width: 400px;
     margin-top: 20px;
     text-align: justify;
     line-height: 25px;
@@ -265,23 +252,10 @@
 
 
 @media (max-width:1100px) {
-    .conteudo1 h1{
-        font-size: 30px;
-    }
-    .conteudo1 h2{
-        font-size: 15px;
-    }
-   
-    main{
-        display: block;
-    }
-  
-    .conteudo2{
-        grid-template-columns: 1fr 1fr;
-    }
-    .c5{
-        height: 1000px;
-    }
+  .h1{
+      width: 200px;
+  }
+
    
 
 }
